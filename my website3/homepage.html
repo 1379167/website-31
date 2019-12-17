@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--- HEADER STARTS HERE -->
+ <header class="navigation">
+  <div class="menu">
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="news.html">News</a></li>
+      <li><a href="lessons.html">Lessons</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="timetable.html">Timetable</a></li>
+      <li><a href="privacy.html">Privacy Policy</a></li>
+    </ul>
+  </div>
+
+<!--- LOGO STARTS HERE -->
+
+  <div class="logo">
+    <img src="nichol1.png" alt="Nicholson Academy" width="180px" height="100px" class="logoimg">
+  </div>
+
+<!--- LOGO ENDS HERE -->
+</header>
+<!--- HEADER ENDS HERE -->
+
+<div class="background-image">
+  <div class="heading">
+    <h1>NICHOLSON ACADEMY</h1>
+</div>
+ <div class="any">
+   <a href="aboutus.html" class="btn1">About Us</a>
+    <a href="form.html" class="btn2">Enrol</a>
+  </div>
+
+  <!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="Picture23.jpg" style="width:100%" class="pic">
+    <div class="text">1st Picture</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="daw.jpg" style="width:100%" class="pic">
+    <div class="text">2nd Picture</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="Nicholson2.png" style="width:100%" class="pic">
+    <div class="text">3rd Picture</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+ showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+ showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+ var i;
+ var slides = document.getElementsByClassName("mySlides");
+ var dots = document.getElementsByClassName("dot");
+ if (n > slides.length) {slideIndex = 1}
+ if (n < 1) {slideIndex = slides.length}
+ for (i = 0; i < slides.length; i++) {
+     slides[i].style.display = "none";
+ }
+ for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+ }
+ slides[slideIndex-1].style.display = "block";
+ dots[slideIndex-1].className += " active";
+}
+</script>
+  <footer class="foot">
+    <ul>
+      <li>E-MAIL ID</li>
+      <li>HELPLINE NUMBER-07967807532</li>
+    <ul>
+
+  </footer>
+
+
+
+
+
+
+</body>
+</html>
+
+
+</body>
+</html>
